@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg-img.jpg");
+    background-position: center center;
+    background-size: max(1250px, 100vw);
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    top: 0;
+    position: absolute;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 85px;
+}
+
+nav img {
+    color: red;
+    width: 147px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 85px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.line {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    bottom: 20px;
+}
+
+.se-btn {
+    padding: 6px 10px 6px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.25rem;
+    color: white;
+    background-color: rgba(39, 38, 38, 0.856);
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 14px 8px 14px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main input {
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid gray;
+    line-height: 1.5;
+    padding: 14px 120px 14px 14px;
+    margin-right: 5px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 14px 14px 14px 14px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    /* max-width: 70vw; */
+    margin: 86px 0 74px 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-right: 34px;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    /* max-width: 70vw; */
+    margin: 86px 0 74px 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+@media screen and (max-width: 812px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .second {
+        flex-wrap: wrap;
+    }
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    top: 20px;
+    width: 430px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    top: 77px;
+    right: 0;
+    width: 373px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.second>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+    padding-bottom: 14px;
+}
+
+.desc {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sectimg {
+    position: relative;
+}
+
+.sectimg img {
+    top: 20px;
+    width: 430px;
+    position: relative;
+    z-index: 10;
+}
+
+.sectimg video {
+    position: absolute;
+    top: 59px;
+    right: 76px;
+    width: 274px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 38px 15px 15px 15px;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(61, 60, 60);
+    padding: 24px;
+    max-width: 80vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox:hover {
+    background-color: gray;
+}
+
+.faqbox h3 {
+    font-size: 22px;
+}
+
+.def-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.hero-button input {
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid gray;
+    line-height: 1.5;
+    padding: 14px 150px 14px 14px;
+    margin-right: 8px;
+}
+
+.hero-button {
+    margin-bottom: 50px;
+}
+
+footer {
+    color: white;
+    /* max-width: 60vw; */
+    /* margin: auto; */
+    padding: 40px;
+}
+
+.call {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    gap: 48px;
+}
+
+.footer a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 812px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    nav img {
+        width: 112px;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 33px;
+    }
+
+    .hero> :first-child {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .hero> :nth-child(3) {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .hero-button {
+        flex-wrap: wrap;
+    }
+
+    .btn-red {
+        margin-top: 15px;
+        padding: 10px 14px 10px 14px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .desc {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .def-area {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .faqbox h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .faqbox {
+        padding: 10px;
+    }
+
+    .main input {
+        padding: 14px 120px 14px 14px;
+        margin-right: 5px;
+    }
+}
